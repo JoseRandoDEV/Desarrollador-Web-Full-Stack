@@ -16,6 +16,11 @@ class DatabaseSeeder extends Seeder
      */
     public function run(): void
     {
-       $this->call(LevelSeeder::class);
+       $this->call([
+        LevelSeeder::class,
+        RoleSeeder::class,
+        UserSeeder::class
+        ]);
     }
 }
+// CURSO VOY POR CLASE 2 MINUTO 40
